@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Layout from '../components/layout';
 
@@ -9,6 +10,6 @@ const ContactSuccess = () => {
             </h1>
         </Layout>
     )
-}
+};
 
 export default ContactSuccess;

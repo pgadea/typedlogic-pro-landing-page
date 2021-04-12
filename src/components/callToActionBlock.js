@@ -8,8 +8,7 @@ const CallToActionBlockWrapper = styled.section`
     background: #eee;
     border-radius: 20px;
     margin: 20px 0;
-
-    .call-to-action-content {
+    .call-to-action-content{
         display: flex;
         .featured-image-wrapper{
             background: white;
@@ -22,20 +21,19 @@ const CallToActionBlockWrapper = styled.section`
             margin: 0;
         }
     }
-`;
+`
 
 const Button = styled.div`
     background: orange;
     display: inline-block;
     border-radius: 4px;
     cursor: pointer;
-
     a{
         padding: 4px 8px;
         color: white;
         display: inline-block;
     }
-`;
+`
 
 const CallToActionBlock = ({title, content, buttonLabel, buttonDestination, featuredImage}) => {
     return (
