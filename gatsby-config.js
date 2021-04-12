@@ -5,6 +5,19 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    'gatsby-plugin-styled-components',
+    {
+      resolve: "@prismicio/gatsby-source-prismic-graphql",
+      options: {
+        repositoryName: "typedlogic-pro",
+        pages: [{
+          type: 'Page',
+          match: '/:uid',
+          path: 'path',
+          component: require.resolve('./src/templates/page.js')
+        }]
+      }
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
